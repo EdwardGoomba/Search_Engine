@@ -25,7 +25,8 @@ def get_all_links(page):
             page = page[endpos:]
         else:
             break
-            
+    return links
+    
 get_all_links(get_page("example_url")
     
     
