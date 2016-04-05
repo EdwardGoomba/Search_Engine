@@ -8,7 +8,6 @@ def get_page(url):
 def get_next_target(page):
     start_link = page.find('<a href=')
 
-    #Insert your code below here
     if start_link == -1:
         return None, 0
     
