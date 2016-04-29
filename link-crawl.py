@@ -35,6 +35,8 @@ def get_all_links(page):
 def crawl_web(seed):
     tocrawl = [seed]
     crawled = []
+    index = []
+    
     while tocrawl:
         page = tocrawl.pop()
         if page not in crawled:
