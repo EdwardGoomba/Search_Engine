@@ -3,8 +3,9 @@ index = []
 def add_to_index(index, keyword, url):
   for entry in index:
     if entry[0] == keyword:
-      entry[1].append(url)
-      return
+      if not url in entry[1]
+        entry[1].append(url)
+        return
   index.append([keyword, [url]])
   
 def lookup(index, word):
